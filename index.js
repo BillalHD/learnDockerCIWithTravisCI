@@ -4,6 +4,7 @@ import config from './data';
 
 const app = express();
 const PORT = 4000;
+
 const client = mongodb.MongoClient;
 
 client.connect(config.DB, { useUnifiedTopology: true }, (err, db) => { 
